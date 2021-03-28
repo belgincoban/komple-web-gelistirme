@@ -1,0 +1,15 @@
+a{
+    color: seagreen;
+    text-decoration: none;
+}
+li{
+    display: inline;
+}
+h1{
+    color: aqua;
+    background-color: black;
+    border: 1px solid darkblue;
+    text-align: center;
+    
+    
+}

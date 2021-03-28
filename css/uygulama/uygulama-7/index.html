@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        #gallery {
+            width: 1200px;
+            margin: 20px auto;
+        }
+        
+        .item-container {
+            width: 25%;
+            float: left;
+            padding: 5px;
+        }
+        
+        .gallery-item {
+            border: 1px solid #ccc;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+        }
+        
+        .gallery-item:hover {
+            border: 1px solid #777;
+        }
+        
+        .description {
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="gallery">
+        <div class="item-container">
+            <div class="gallery-item">
+                <a href="img/a.jpeg" target="_blank">
+                    <img src="img/a.jpeg" alt="">
+                </a>
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur.
+                </div>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="gallery-item">
+                <a href="img/b.jpeg" target="_blank">
+                    <img src="img/b.jpeg" alt="">
+                </a>
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur.
+                </div>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="gallery-item">
+                <a href="img/c.jpeg" target="_blank">
+                    <img src="img/c.jpeg" alt="">
+                </a>
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur.
+                </div>
+            </div>
+        </div>
+        <div class="item-container">
+            <div class="gallery-item">
+                <a href="img/d.jpeg" target="_blank">
+                    <img src="img/d.jpeg" alt="">
+                </a>
+                <div class="description">
+                    Lorem ipsum dolor sit amet consectetur.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

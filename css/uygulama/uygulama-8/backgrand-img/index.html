@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background image</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+        
+        .header {
+            background: red;
+            background-image: linear-gradient(rgba(250, 285, 250, 0.80), rgba(250, 285, 245, 0.7)), url("img/bg.jpeg");
+            height: 95vh;
+            background-size: cover;
+            background-position: top;
+            position: relative;
+        }
+        
+        .heading {
+            position: absolute;
+            color: violet;
+            text-transform: uppercase;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+        }
+        
+        .heading-main {
+            font-size: 50px;
+            display: block;
+            letter-spacing: 10px;
+        }
+        
+        .heading-sub {
+            font-size: 30px;
+            display: block;
+            letter-spacing: 5px;
+        }
+        
+        .box-logo {
+            position: absolute;
+            top: 40px;
+            left: 40px;
+        }
+        
+        .log {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="box-logo">
+            <img class="log" src="img/logo.png" alt="">
+        </div>
+        <h1 class="heading">
+            <span class="heading-main">Main Heading Title</span>
+            <span class="heading-sub">Sub Title</span>
+        </h1>
+
+
+    </header>
+
+</body>
+
+</html>

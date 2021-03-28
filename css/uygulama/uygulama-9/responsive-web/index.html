@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 7px;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.6rem;
+            color: #fff;
+            background-color: #333;
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        p {
+            padding: 1.6rem 0;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /*header*/
+        
+        header {
+            height: 45rem;
+        }
+        
+        header .bg-image {
+            background-image: url(img/bg.jpeg);
+            position: absolute;
+            height: 45rem;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.4;
+            z-index: -1;
+        }
+        
+        header h1 {
+            padding: 11rem;
+            padding-bottom: 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            border: 1px solid #666;
+            padding: 1.6rem 3.2rem;
+            margin: .5rem 0;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: #eaeaea;
+            color: #333;
+        }
+        /*section-a*/
+        
+        #section-a {
+            background-color: #eaeaea;
+            color: #333;
+            padding: 3.2rem 0;
+        }
+        /*section-b*/
+        
+        #section-b {
+            padding: 2rem;
+        }
+        
+        #section-b ul {
+            list-style: none;
+        }
+        
+        #section-b li {
+            background: #fff;
+            color: #333;
+            margin-bottom: 1.2rem;
+        }
+        
+        .col-content {
+            padding: 1.2rem;
+        }
+        /*section-c*/
+        
+        #section-c {
+            background: #eaeaea;
+            color: #333;
+            padding: 5rem;
+        }
+        /*section-d*/
+        
+        #section-d .box {
+            padding: 5rem;
+        }
+        
+        #section-d .box:first-child {
+            background-color: blue;
+        }
+        /*footer*/
+        
+        footer {
+            padding: 4rem;
+            background-color: black;
+        }
+        
+        footer a {
+            color: blue;
+        }
+        /*responsive*/
+        
+        @media screen and (min-width:800px) {
+            #section-b li {
+                width: 28%;
+                display: inline-block;
+                margin: 1%;
+            }
+            .box {
+                width: 50%;
+                float: left;
+            }
+            html {
+                font-size: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="bg-image"></div>
+        <div class="content">
+            <h1>welcome to Belgincoban.com</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores.</p>
+            <a href="#" class="btn">Read More </a>
+        </div>
+    </header>
+    <main>
+        <section id="section-a">
+            <div class="content">
+                <h2> Web & Application Development </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur eos amet, minima placeat magnam officiis.</p>
+
+            </div>
+        </section>
+        <section id="section-b">
+            <ul>
+                <li>
+                    <div class="col">
+                        <img src="img/1.jpeg" alt="">
+                        <div class="col-content">
+                            <h3 class="col-title"> Web Application</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col">
+                        <img src="img/2.jpeg" alt="">
+                        <div class="col-content">
+                            <h3 class="col-title"> Web Application</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="col">
+                        <img src="img/3.jpeg" alt="">
+                        <div class="col-content">
+                            <h3 class="col-title"> Web Application</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+        <section id="section-c">
+            <div class="content">
+                <h2> Develop your dreams </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolorem non labore, rerum eligendi vero?
+
+                </p>
+            </div>
+        </section>
+        <section id="section-d" class="clearfix">
+            <div class="box">
+                <h2 class="content-title"> Contact us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ut nobis praesentium dolorem. Sed, saepe?</p>
+                <p>belgincoban/contact</p>
+            </div>
+            <div class="box">
+                <h2 class="content-title"> About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ut nobis praesentium dolorem. Sed, saepe?</p>
+                <p>belgincoban.com</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>Develop your dreams</div>
+        <div>Online courses
+            <a href="#"> Belgin Çoban</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
